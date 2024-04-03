@@ -32,12 +32,12 @@ function log_new(args) {
 
   const stack = new Error().stack.split('\n')
   // get text between two parentheses
-  // '    at copyAllStaticFiles (/home/mbana/dev/bana-io/www-bana-io-vue-js/docs/.vuepress/config.js:134:13)'
+  // '    at copyAllStaticFiles (/home/mbana/dev/bana-io/www.bana.io-vue-js/docs/.vuepress/config.js:134:13)'
   // ->
   //
   // Match 1
-  // Full match	26-102	(/home/mbana/dev/bana-io/www-bana-io-vue-js/docs/.vuepress/config.js:134:13)
-  // Group 1.	27-101	/home/mbana/dev/bana-io/www-bana-io-vue-js/docs/.vuepress/config.js:134:13
+  // Full match	26-102	(/home/mbana/dev/bana-io/www.bana.io-vue-js/docs/.vuepress/config.js:134:13)
+  // Group 1.	27-101	/home/mbana/dev/bana-io/www.bana.io-vue-js/docs/.vuepress/config.js:134:13
   const line = stack[STACK_INDEX].match(/\(([^)]+)\)/)[1]
   const func_name = stack[STACK_INDEX].match(/at (.*?) /)[1]
 
@@ -336,7 +336,11 @@ module.exports = {
           },
           {
             text: 'GitHub - BanaIO',
-            link: 'https://github.com/banaio',
+            link: 'https://github.com/bana-io',
+          },
+          {
+            text: 'GitHub - bana.rs',
+            link: 'https://github.com/bana-rs',
           },
           {
             text: 'GitHub - m_bana',

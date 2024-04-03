@@ -51,7 +51,7 @@ This `Makefile` uses the [Google Cloud SDK Docker](https://github.com/GoogleClou
 
 * You could have mounted a `volume` with the file `key-file.json` but I've chosen not to.
 * We've abstracted the authentication aspect into a variable, `COMMAND_GCLOUD_AUTHENTICATE` that is used by `zones` and `pods`.
-* We authorise Docker so pushing to Google Container Registry works, e.g, `docker push gcr.io/www-bana-io/www-bana-io:latest`. This is also why we mount the Docker socket, `-v /var/run/docker.sock:/var/run/docker.sock`.
+* We authorise Docker so pushing to Google Container Registry works, e.g, `docker push gcr.io/www.bana.io/www.bana.io:latest`. This is also why we mount the Docker socket, `-v /var/run/docker.sock:/var/run/docker.sock`.
 * The flag `--quiet` runs `gcloud` in non-interactive mode. You want this when running in CI.
 
 <!-- <<< @/docs/.vuepress/public/examples/circleci-authorizing-the-google-cloud-sdk_examples/Makefile -->

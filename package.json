@@ -40,17 +40,17 @@
     "serialize-javascript": "^3.1.0",
     "websocket-extensions": "^0.1.4"
   },
-  "name": "www-bana-io",
+  "name": "www.bana.io",
   "version": "v0.1.0",
   "author": "Mohamed Bana <mohamed@bana.io>",
   "description": "https://bana.io",
-  "homepage": "https://github.com/banaio/www-bana-io",
+  "homepage": "https://github.com/banaio/www.bana.io",
   "repository": {
     "type": "git",
-    "url": "git@github.com:banaio/www-bana-io.git"
+    "url": "git@github.com:banaio/www.bana.io.git"
   },
   "bugs": {
-    "url": "https://github.com/banaio/www-bana-io/issues"
+    "url": "https://github.com/banaio/www.bana.io/issues"
   },
   "license": "MIT",
   "private": true,

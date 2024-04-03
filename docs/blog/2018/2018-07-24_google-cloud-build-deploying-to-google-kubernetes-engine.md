@@ -34,19 +34,19 @@ steps:
   args: ["build"]
 # push the images just before we update the Kubernetes deployment
 - name: "gcr.io/cloud-builders/docker"
-  args: ["push", "gcr.io/www-bana-io/www-bana-io:latest"]
+  args: ["push", "gcr.io/www.bana.io/www.bana.io:latest"]
 # update the deployment
 - name: "gcr.io/cloud-builders/kubectl"
-  args: ["patch", "deployment", "www-bana-io", "-p", "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"SHORT_SHA\":\"$SHORT_SHA\"}}}}}"]
+  args: ["patch", "deployment", "www.bana.io", "-p", "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"SHORT_SHA\":\"$SHORT_SHA\"}}}}}"]
   env:
   - "CLOUDSDK_COMPUTE_ZONE=us-central1-a"
-  - "CLOUDSDK_CONTAINER_CLUSTER=www-bana-io-cluster"
+  - "CLOUDSDK_CONTAINER_CLUSTER=www.bana.io-cluster"
 
 images:
-- "gcr.io/www-bana-io/www-bana-io"
+- "gcr.io/www.bana.io/www.bana.io"
 
 tags:
-- "www-bana-io"
+- "www.bana.io"
 - "frontend"
 ```
 
@@ -55,10 +55,10 @@ tags:
 ```yaml
 version: "3"
 services:
-  www-bana-io:
-    image: gcr.io/www-bana-io/www-bana-io:latest
-    container_name: www-bana-io
-    hostname: www-bana-io
+  www.bana.io:
+    image: gcr.io/www.bana.io/www.bana.io:latest
+    container_name: www.bana.io
+    hostname: www.bana.io
     build:
       context: .
       dockerfile: ./Dockerfile

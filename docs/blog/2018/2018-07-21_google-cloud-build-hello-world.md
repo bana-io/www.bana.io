@@ -25,7 +25,7 @@ steps:
 Validate `cloudbuild_example_1.yaml` (dry run):
 
 ```bash
-$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world/cloudbuild_example_1.yaml --dryrun=true /Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world
+$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world/cloudbuild_example_1.yaml --dryrun=true /Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world
 2018/07/25 20:48:44 RUNNER - [docker ps -a -q --filter name=step_[0-9]+|cloudbuild_|metadata]
 2018/07/25 20:48:44 RUNNER - [docker network ls -q --filter name=cloudbuild]
 2018/07/25 20:48:44 RUNNER - [docker volume ls -q --filter name=homevol|cloudbuild_]
@@ -46,7 +46,7 @@ DONE
 Run build:
 
 ```bash
-$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world/cloudbuild_example_1.yaml --dryrun=false --write-workspace=/Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world/workspace /Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world
+$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world/cloudbuild_example_1.yaml --dryrun=false --write-workspace=/Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world/workspace /Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world
 2018/07/25 20:50:52 Warning: The server docker version installed (18.06.0-ce-rc3) is different from the one used in GCB (17.12.0-ce)
 2018/07/25 20:50:52 Warning: The client docker version installed (18.06.0-ce-rc3) is different from the one used in GCB (17.12.0-ce)
 Using default tag: latest
@@ -79,7 +79,7 @@ steps:
 Validate `cloudbuild_example_2.yaml` (dry run):
 
 ```bash
-$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world/cloudbuild_example_2.yaml --dryrun=true /Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world
+$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world/cloudbuild_example_2.yaml --dryrun=true /Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world
 2018/07/25 20:53:56 RUNNER - [docker ps -a -q --filter name=step_[0-9]+|cloudbuild_|metadata]
 2018/07/25 20:53:56 RUNNER - [docker network ls -q --filter name=cloudbuild]
 2018/07/25 20:53:56 RUNNER - [docker volume ls -q --filter name=homevol|cloudbuild_]
@@ -100,7 +100,7 @@ DONE
 Run build:
 
 ```bash
-$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world/cloudbuild_example_2.yaml --dryrun=false --write-workspace=/Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world/workspace /Users/mbana/home/mbana/dev/bana-io/gcloud/www-bana-io/content/blog/cloud-build-hello-world
+$ cloud-build-local --config=/Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world/cloudbuild_example_2.yaml --dryrun=false --write-workspace=/Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world/workspace /Users/mbana/home/mbana/dev/bana-io/gcloud/www.bana.io/content/blog/cloud-build-hello-world
 2018/07/25 20:54:28 Warning: The server docker version installed (18.06.0-ce-rc3) is different from the one used in GCB (17.12.0-ce)
 2018/07/25 20:54:28 Warning: The client docker version installed (18.06.0-ce-rc3) is different from the one used in GCB (17.12.0-ce)
 Using default tag: latest

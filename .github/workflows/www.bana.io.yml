@@ -1,20 +1,4 @@
-# Examples:
-# * https://github.com/actions/setup-node
-#
-# $ node --version
-# v12.18.2
-# $ npm --version
-# 6.14.8
-# $ yarnpkg --version
-# 1.22.4
-
-# $ nodejs --version
-# v10.19.0
-# $ npm --version
-# 6.14.4
-# $ yarnpkg --version
-# 1.22.4
-name: www-bana-io
+name: www.bana.io
 on:
   push:
     branches: [master]
@@ -74,7 +58,7 @@ jobs:
         run: |
           echo 'TODO: publish resume in separate tagged commit'
 
-  www-bana-io:
+  www:
     env:
       TERM: "xterm-256color"
     continue-on-error: true
